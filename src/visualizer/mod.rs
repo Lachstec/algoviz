@@ -28,7 +28,7 @@ impl std::convert::From<VisualizerBuilder> for Visualizer {
         let min = value.minimum.unwrap_or(1);
         let max = value.maximum.unwrap_or(100);
         let width = value.width.unwrap_or(800);
-        let height = value.width.unwrap_or(600);
+        let height = value.height.unwrap_or(600);
         let order = value.order.unwrap_or(ArrayOrder::Unordered);
         let arr = Array::new(arr_size, min, max, order);
 
