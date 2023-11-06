@@ -4,8 +4,8 @@ use crate::visualizer::Array;
 pub struct BubbleSort;
 
 impl SortingAlgorithm for BubbleSort {
-   fn name() -> &'static str {
-       "Bubblesort"
+   fn name(&self) -> String {
+       "Bubblesort".to_string()
    }
 
    fn sort(&self, array: &mut Array) {

@@ -2,7 +2,9 @@ use crate::visualizer::Array;
 
 pub trait SortingAlgorithm {
     fn sort(&self, array: &mut Array);
-    fn name() -> &'static str;
+    fn name(&self) -> String;
 }
 
-pub mod bubble_sort;
+mod bubble_sort;
+
+pub use bubble_sort::BubbleSort;
